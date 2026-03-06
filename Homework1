@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>劉宥綸 | 個人主頁</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent-color); border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-list strong {
+            width: 100px;
+            color: var(--primary-color);
+        }
+
+        .contact-link {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* 響應式優化 */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .info-list li { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>劉宥綸 (Yolun Liu)</h1>
+    <p>金門大學資訊工程學系 | 一年級學生</p>
+</header>
+
+<div class="container">
+    
+    <section class="card">
+        <h2>關於我</h2>
+        <p>
+            你好！我是劉宥綸，目前就讀於<strong>金門大學資工系一年級</strong>。
+            我對程式開發與資訊技術充滿熱情，正在積極學習基礎程式語言與演算法，目標是成為一名優秀的軟體工程師。
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>聯絡資訊</h2>
+        <ul class="info-list">
+            <li><strong>姓名：</strong> 劉宥綸</li>
+            <li><strong>身分：</strong> 國立金門大學 資工系 1A</li>
+            <li><strong>Email：</strong> <a href="mailto:1006yolun@gmail.com" class="contact-link">1006yolun@gmail.com</a></li>
+            <li><strong>電話：</strong> <a href="tel:0984017757" class="contact-link">0984-017-757</a></li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>技能學習中</h2>
+        <ul>
+            <li>C / C++ 程式語言基礎</li>
+            <li>HTML / CSS 網頁設計</li>
+            <li>演算法與資料結構</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 劉宥綸 Yolun Liu. All Rights Reserved.
+</footer>
+
+</body>
+</html>
